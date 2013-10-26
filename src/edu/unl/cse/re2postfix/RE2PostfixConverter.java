@@ -1,7 +1,5 @@
 package edu.unl.cse.re2postfix;
 
-
-
 import java.util.Stack;
 import java.util.ArrayList;
 
@@ -9,8 +7,8 @@ import edu.unl.cse.utils.Operator;
 
 
 public class RE2PostfixConverter {
-	Stack stack = new Stack();
-	ArrayList output = new ArrayList();
+	Stack<Character> stack = new Stack<Character>();
+	ArrayList<Character> output = new ArrayList<Character>();
 	
 	/**
 	 * Insert concat operator into the original infix RE. 
