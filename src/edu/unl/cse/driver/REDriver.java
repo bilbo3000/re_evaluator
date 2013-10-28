@@ -1,10 +1,6 @@
 package edu.unl.cse.driver;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.BufferedReader; 
-import java.io.InputStreamReader; 
-
 import edu.unl.cse.evaluator.StringEvaluator;
 import edu.unl.cse.nfa2dfa.NFA2DFAConverter;
 import edu.unl.cse.postfix2nfa.Postfix2NFAConverter;
