@@ -1,7 +1,0 @@
-(a|bb*a)*bb*
-b
-ab
-bbabbabb
-abababb
-bbbbbb
-aaaaaa

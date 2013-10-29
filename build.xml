@@ -5,7 +5,7 @@
 	<property name="classes.dir" value="${build.dir}/classes"/>
 	<property name="jar.dir" value="${build.dir}/jar"/>
 	<property name="main-class" value="edu.unl.cse.driver.REDriver"/>
-	
+
 	<!-- Targets -->
 	<!-- Clean --> 
 	<target name="clean"> 
@@ -15,7 +15,7 @@
 	<!-- Compile --> 
 	<target name="compile"> 
 		<mkdir dir="${classes.dir}"/>
-		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}"/>
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}" fork="yes"/>
 	</target> 
 	
 	<!-- Create jar --> 
