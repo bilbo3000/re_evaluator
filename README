@@ -1,0 +1,62 @@
+Regular Expression Evaluator
+
+Dongpu Jin
+10/30/2013
+
+How to build and run the project? 
+
+1. Put the zip file 'djin-project1.zip' to a directory on cse and unzip it: 
+
+    $ unzip djin-project1.zip
+
+2. Go to resulting directory 're_evaluator': 
+
+    $ cd re_evaluator
+
+3. Build the project: 
+
+    $ ant
+
+4. Run the project with an input (let's run q1.txt as an example): 
+
+    $ java -jar ./build/jar/re_evaluator.jar < ./input/q1.txt
+
+The output would look something like: 
+
+yes
+yes
+yes
+yes
+no
+no
+
+
+Source code description: 
+
+-- re_evaluator/build.xml
+    The ant build file that build the project and generate 
+    executable jar file. 
+
+-- re_evaluator/src/edu/unl/cse/driver/REDriver.java
+    The driver class of this project that initiate the process. 
+
+-- re_evaluator/src/edu/unl/cse/driver/InputFileReader.java
+    The class that reads input file redirected from command line. 
+
+-- re_evaluator/src/edu/unl/cse/re2postfix/RE2PostfixConverter.java
+    Converter that converts regular expression to postfix 
+    expression. 
+
+-- re_evaluator/src/edu/unl/cse/postfix2nfa/Postfix2NFAConverter.java
+    Converter that converts postfix notation of regular expression
+    to NFA. 
+
+-- re_evaluator/src/edu/unl/cse/nfa2dfa/NFA2DFAConverter.java
+    Converter that converts NFA to DFA. 
+
+-- re_evaluator/src/edu/unl/cse/evaluator/StringEvaluator.java
+    Evaluator evaluates a given string against a DFA. 
+
+-- re_evaluator/src/edu/unl/cse/utils/*
+    Various utility classes including State, Symbol, Operator, 
+    and an IdManager. 
